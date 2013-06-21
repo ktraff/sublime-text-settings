@@ -1,0 +1,17 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Backbone.js",
+		"CoffeeScript",
+		"Emmet",
+		"jQuery",
+		"jQuery Snippets pack",
+		"Package Control",
+		"Prefixr",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"TrailingSpaces",
+		"Wordpress"
+	]
+}
