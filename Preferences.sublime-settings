@@ -7,8 +7,7 @@
 	[
 		"ASP",
 		"Wordpress",
-		"TrailingSpaces",
-		"Emmet"
+		"TrailingSpaces"
 	],
 	"translate_tabs_to_spaces": true,
 	"vintage_start_in_command_mode": true
