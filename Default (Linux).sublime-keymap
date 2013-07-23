@@ -29,5 +29,7 @@
 	        { "key": "setting.command_mode", "operand": false },
 	        { "key": "setting.is_widget", "operand": false }
 	    ]
-	}
+	},	
+	{ "keys": ["alt+o"], "command": "run_macro_file", "args": {"file": "Packages/User/hard_next_line.sublime-macro"} },		
+	{ "keys": ["alt+shift+o"], "command": "run_macro_file", "args": {"file": "Packages/User/hard_prev_line.sublime-macro"} }	
 ]

@@ -1,0 +1,7 @@
+[
+    {"command": "move_to", "args": {"to": "hardeol"}},
+    {"command": "move", "args": {"by": "lines", "forward": false} },
+    {"command": "insert", "args": {"characters": "\n"}},
+    {"command": "move_to", "args": {"to": "hardbol"}},    
+    {"command": "enter_insert_mode"}
+]
