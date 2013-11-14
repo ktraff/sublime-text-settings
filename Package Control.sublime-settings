@@ -6,6 +6,7 @@
 		"Backbone.js",
 		"CoffeeScript",
 		"Emmet",
+		"EncodingHelper",
 		"jQuery",
 		"jQuery Snippets pack",
 		"Package Control",
