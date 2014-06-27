@@ -1,2 +1,35 @@
 [
+	// auto-indentation shortcut
+	{ "keys": ["f9"], "command": "reindent"},
+	// tab escape parenthesis, quotes, etc...
+	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+	    [
+	        { "key": "preceding_text", "operator": "regex_contains", "operand": "[^ \t]+", "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^[)'}\"\\]]", "match_all": true },
+	        { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+	        // prevent tab escape when cycling through snippet fields
+	        { "key": "has_next_field", "operator": "equal", "operand": false }
+	    ]   
+  	},
+  	// linux system keybindings overrides ctrl+space for autocompletion.  Adding this manually
+  	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+  	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+	  	[
+		  	{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+		  	{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+		  	{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+	  	]
+	},
+	// override f2 for bookmarks, as I'm using this to switch linux workspace
+	{ "keys": ["f5"], "command": "next_bookmark" },
+	// Vintage (vim) escape insert mode
+	{ "keys": ["k", "k"], "command": "exit_insert_mode",
+	    "context":
+	    [
+	        { "key": "setting.command_mode", "operand": false },
+	        { "key": "setting.is_widget", "operand": false }
+	    ]
+	},	
+	{ "keys": ["alt+o"], "command": "run_macro_file", "args": {"file": "Packages/User/hard_next_line.sublime-macro"} },		
+	{ "keys": ["alt+shift+o"], "command": "run_macro_file", "args": {"file": "Packages/User/hard_prev_line.sublime-macro"} }	
 ]
